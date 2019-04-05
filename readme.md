@@ -8,7 +8,7 @@
 </p>
 
 # Itinex
-Itinerary and Expense
+Itinerary and Expense is a first-time laravel project, free but not intended for use. It may be a useful thing someday ...
 
 ## About Laravel
 
