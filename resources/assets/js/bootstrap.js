@@ -11,7 +11,8 @@ window.Popper = require('popper.js').default;
 try {
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap');
+// Use bulma without JS, no bootstrap
+//    require('bootstrap');
 } catch (e) {}
 
 /**
