@@ -4,18 +4,20 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
-// Variables
+// Theme Variables
+//@import "node_modules/bulmaswatch/darkly/variables";
+
+// Custom Variables
 @import "variables";
 
 // Bulma
 @import '~bulma/bulma';
 
-// Bootstrap
-//@import '~bootstrap/scss/bootstrap';
+// Theme Overrides
+//@import "node_modules/bulmaswatch/darkly/overrides";
 
-/*
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-*/
+// Custom Overrides
+@import "overrides";
+
+// Default Bootstrap instead of Bulma
+//@import '~bootstrap/scss/bootstrap';

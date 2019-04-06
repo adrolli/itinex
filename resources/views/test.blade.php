@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    
+    <title>Itinex Start</title>
 
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script type="text/javascript">
+        window.Laravel = {csrfToken: '{{ csrf_token() }}'};
+    </script>
 </head>
 <body>
     
@@ -72,24 +77,25 @@
     </nav>
 
     <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-             Hello World!
-          </h1>
-          <h2 class="subtitle">
-            Static Bulma CSS component.
-          </h2>
+        <div class="hero-body">
+            <div class="container">
+            <h1 class="title">
+                Hello World!
+            </h1>
+            <h2 class="subtitle">
+                Static Bulma CSS component "Hero".
+            </h2>
+            </div>
         </div>
-      </div>
     </section>
 
-    <div id="app">
-
-        
-        
+    <div class="content">
+        <div class="container" id="app">
+            <h3>Laravel works</h3>
+            <p>It seems that laravel is working fine but is there no Vuejs ...?</p>
+        </div>
     </div>
 
-    <script src="{{ asset('js/app.js') }}">
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
