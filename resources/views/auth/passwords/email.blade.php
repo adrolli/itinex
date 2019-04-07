@@ -1,47 +1,59 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+<section class="hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title has-text-grey">{{ __('Reset Password') }}</h3>
+                    <div class="box">
+                        <figure class="avatar">
+                            <img src="/img/suparavel-logo-100.png" >
+                        </figure>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                        <hr>
 
-                    <form method="POST" action="{{ route('password.email') }}" aria-label="{{ __('Reset Password') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
                             </div>
-                        </div>
+                        @endif
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
-                                </button>
+                        <form method="POST" action="{{ route('password.email') }}" aria-label="{{ __('Reset Password') }}">
+                            @csrf
+
+                            <div class="field">
+                                                                        
+                                    <label for="email">{{ __('E-Mail Address') }}</label>
+
+                                    <div class="control">
+
+                                    <input placeholder="{{ __('E-Mail Address') }}" id="email" type="email" class="input is-large form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+
+                                    @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
                             </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button type="submit" class="button is-block is-info is-large is-fullwidth">
+                                        {{ __('Send Password Reset Link') }}
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
                         </div>
-                    </form>
+                    <p class="has-text-grey">
+                        <a href="{{ route('login') }}">{{ __('Login') }}</a> &nbsp;·&nbsp;
+                        <a href="{{ route('register') }}">{{ __('Register') }}</a> &nbsp;·&nbsp;
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 @endsection
