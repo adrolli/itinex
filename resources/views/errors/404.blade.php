@@ -6,20 +6,13 @@
         <div class="hero-body">
             <div class="container">
             <h1 class="title">
-                Hello World!
+                404 Error
             </h1>
             <h2 class="subtitle">
-                Static Bulma CSS component "Hero".
+                This part seems to be failing. We can not find, what you are searching for.
             </h2>
             </div>
         </div>
     </section>
-
-    <div class="content">
-        <div class="container" id="app">
-            <h3>Laravel works</h3>
-            <p>It seems that laravel is working fine but is there no Vuejs ...?</p>
-        </div>
-    </div>
 
 @endsection
