@@ -11,10 +11,11 @@
 
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
 
-    <div id="app">
+    <div id="wrapper">
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -88,5 +89,15 @@
 
     @yield('content')
 
+  </div>
+    <footer class="footer fix-footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Itinex</strong> by <a href="https://alf-drollinger.com">Alf Drollinger</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
 </body>
 </html>

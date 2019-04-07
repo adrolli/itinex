@@ -21,3 +21,15 @@
 
 // Default Bootstrap instead of Bulma
 //@import '~bootstrap/scss/bootstrap';
+
+// Sticky footer
+// @see https://github.com/jgthms/bulma/issues/47
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+    
+#wrapper {
+    flex: 1;
+}

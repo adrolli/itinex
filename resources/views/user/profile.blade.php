@@ -17,7 +17,7 @@
 
                     <div class="control">
 
-                        <input type="text" name="name" class="input is-large form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{ $user->name }}" />
+                        <input type="text" name="name" class="input is-large{{ $errors->has('name') ? ' is-danger' : '' }}" value="{{ $user->name }}" />
 
                     </div>
                 </div>
@@ -28,7 +28,7 @@
 
                     <div class="control">
 
-                        <input type="email" name="email" class="input is-large form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ $user->email }}" />
+                        <input type="email" name="email" class="input is-large{{ $errors->has('email') ? ' is-danger' : '' }}" value="{{ $user->email }}" />
 
                     </div>
                 </div>
@@ -39,7 +39,7 @@
 
                     <div class="control">
 
-                        <input type="password" class="input is-large form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" />
+                        <input type="password" class="input is-large{{ $errors->has('password') ? ' is-danger' : '' }}" name="password" />
 
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     <div class="control">
 
 
-                        <input type="password" class="input is-large form-control" name="password_confirmation" />
+                        <input type="password" class="input is-large" name="password_confirmation" />
 
                     </div>
                 </div>

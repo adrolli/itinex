@@ -6,19 +6,20 @@
         <div class="hero-body">
             <div class="container">
             <h1 class="title">
-                Hello World!
+                Itininex - a small demo App
             </h1>
             <h2 class="subtitle">
-                This is the static website content.
+                This is a demo app for managing your Itinerary and Expense while traveling.
             </h2>
+            <a class="button" href="https://github.com/adrolli/itinex" target="_blank">Download on Github</a>
             </div>
         </div>
     </section>
 
-    <div class="content">
+    <section class="content">
         <div class="container" id="app">
- 
+                
        </div>
-    </div>
+    </section>
 
 @endsection
