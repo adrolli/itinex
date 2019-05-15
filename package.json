@@ -20,6 +20,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "@mdi/font": "^3.5.95",
         "buefy": "^0.7.3",
         "bulma": "^0.7.4",
         "bulmaswatch": "^0.7.2",

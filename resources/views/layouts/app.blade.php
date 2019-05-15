@@ -93,11 +93,13 @@
     <footer class="footer fix-footer">
       <div class="content has-text-centered">
         <p>
-          <strong>Itinex</strong> by <a href="https://alf-drollinger.com">Alf Drollinger</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          <strong>Itinex - Itinerary and Expense</strong> by <a href="https://alf-drollinger.com">Alf Drollinger</a>. The source code is licensed
+          <a href="https://opensource.org/licenses/GPL-3.0">GPL</a>. Made with <span class="iconify" data-icon="emojione-monotone:green-heart"></span> in Phnom Penh, Cambodia</a>.
         </p>
       </div>
     </footer>
+
+    <script src="https://code.iconify.design/1/1.0.0/iconify.min.js"></script>
+
 </body>
 </html>
